@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
 #bg-img {
   background: url(../img/laptop.jpg);
   background-attachment: fixed;
@@ -6,7 +8,7 @@
 }
 
 #bg-img:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -20,12 +22,13 @@
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.8);
 }
 
-#main-nav,
-#main-nav .navbar-brand {
-  font-size: 1.3rem;
+.navbar-brand {
+  font-family: Montserrat;
+  font-size: 1.5rem;
 }
 
 #main-nav ul li {
+  font-size: 1.3rem;
   margin-right: 1.4rem;
 }
 
