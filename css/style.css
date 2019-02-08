@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url("https://fonts.googleapis.com/css?family=Lato");
 
 body {
   font-family: Lato, sans-serif;
@@ -12,7 +12,7 @@ body {
 }
 
 #bg-img:after {
-  content: '';
+  content: "";
   position: fixed;
   top: 0;
   right: 0;
@@ -22,12 +22,29 @@ body {
   z-index: -1;
 }
 
+/* NAVIGATION */
 #main-nav {
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.8);
 }
 
 .navbar-brand {
   font-size: 1.5rem;
+}
+
+.navbar-brand::after {
+  content: "Andy Hall";
+  color: rgb(255, 234, 44);
+  position: absolute;
+  margin-left: 20px;
+  transform: translateX(-60px);
+  opacity: 0;
+  transition: 0.2s ease;
+}
+
+#main-nav:hover .navbar-brand::after {
+  transform: translateX(0);
+  opacity: 1;
+  transition: 0.4s ease;
 }
 
 #main-nav ul li {
@@ -41,6 +58,39 @@ body {
 
 #main-nav a:hover {
   color: rgb(255, 234, 44) !important;
+}
+
+/* SHOWCASE */
+#showcase h1 {
+  font-size: 3.4rem;
+}
+
+#showcase p {
+  font-size: 2.2rem;
+}
+
+/* SOCIAL */
+#social .btn {
+  width: 120px;
+}
+.btn-facebook {
+  background: #3b5998;
+  color: #fff;
+}
+
+.btn-twitter {
+  background: #00aced;
+  color: #fff;
+}
+
+.btn-github {
+  background: #333;
+  color: #fff;
+}
+
+.btn-linkedin {
+  background: #00a0dc;
+  color: #fff;
 }
 
 @media (max-width: 576px) {
