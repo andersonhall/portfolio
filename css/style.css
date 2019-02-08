@@ -4,6 +4,14 @@ body {
   font-family: Lato, sans-serif;
 }
 
+p {
+  font-size: 1.5rem;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 #bg-img {
   background: url(../img/laptop.jpg);
   background-attachment: fixed;
@@ -109,6 +117,10 @@ body {
 
 .btn-contact:hover {
   background: rgba(255, 234, 44, 0.8);
+}
+
+#about a {
+  color: rgb(255, 234, 44) !important;
 }
 
 @media (max-width: 576px) {
