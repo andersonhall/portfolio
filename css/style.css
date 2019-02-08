@@ -123,6 +123,13 @@ a:hover {
   color: rgb(255, 234, 44) !important;
 }
 
+/* PROJECTS */
+#projects .card {
+  width: 320px;
+  border: none;
+  height: 450px;
+}
+
 @media (max-width: 576px) {
   #showcase .display-4 {
     font-size: 1.9rem;
