@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 body {
   font-family: Lato, sans-serif;
@@ -12,13 +12,13 @@ body {
 }
 
 #bg-img:after {
-  content: "";
+  content: '';
   position: fixed;
   top: 0;
   right: 0;
   width: 100%;
   height: 100%;
-  background: rgba(68, 68, 68, 0.9);
+  background: rgba(68, 68, 68, 0.92);
   z-index: -1;
 }
 
@@ -27,12 +27,16 @@ body {
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.8);
 }
 
+.active {
+  color: rgb(255, 234, 44) !important;
+}
+
 .navbar-brand {
   font-size: 1.5rem;
 }
 
 .navbar-brand::after {
-  content: "Andy Hall";
+  content: 'Andy Hall';
   color: rgb(255, 234, 44);
   position: absolute;
   margin-left: 20px;
@@ -73,6 +77,11 @@ body {
 #social .btn {
   width: 120px;
 }
+
+#social .btn:hover {
+  color: rgb(255, 234, 44);
+}
+
 .btn-facebook {
   background: #3b5998;
   color: #fff;
@@ -91,6 +100,15 @@ body {
 .btn-linkedin {
   background: #00a0dc;
   color: #fff;
+}
+
+/* CONTACT */
+.btn-contact {
+  background: rgb(255, 234, 44);
+}
+
+.btn-contact:hover {
+  background: rgba(255, 234, 44, 0.8);
 }
 
 @media (max-width: 576px) {
